@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import NavbarComponent from './components/navbar_component';
+import ProductsListComponent from './components/product_list_component';
+import { SafeAreaView } from 'react-native';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+            <NavbarComponent />
+            <ProductsListComponent />
+    </SafeAreaView>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
